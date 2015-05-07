@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185AEEE81AFB0FCC00D93B3E /* PBFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEEE71AFB0FCC00D93B3E /* PBFDiscoverViewController.m */; };
+		185AEEF71AFB10BB00D93B3E /* PBFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEEF61AFB10BB00D93B3E /* PBFHomeViewController.m */; };
+		185AEEFE1AFB111D00D93B3E /* PBFTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEEFD1AFB111D00D93B3E /* PBFTabbarController.m */; };
+		185AEF051AFB118800D93B3E /* PBFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF041AFB118800D93B3E /* PBFMeViewController.m */; };
+		185AEF0C1AFB11EA00D93B3E /* PBFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF0B1AFB11EA00D93B3E /* PBFMessageViewController.m */; };
+		185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF101AFB123200D93B3E /* UIImage+MJ.m */; };
 		18C2407C1AFAF81800D6C333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407B1AFAF81800D6C333 /* main.m */; };
 		18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407E1AFAF81800D6C333 /* AppDelegate.m */; };
 		18C240851AFAF81800D6C333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C240831AFAF81800D6C333 /* Main.storyboard */; };
 		18C240871AFAF81800D6C333 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C240861AFAF81800D6C333 /* Images.xcassets */; };
 		18C2408A1AFAF81800D6C333 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C240881AFAF81800D6C333 /* LaunchScreen.xib */; };
 		18C240961AFAF81800D6C333 /* PBFWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240951AFAF81800D6C333 /* PBFWeiboTests.m */; };
-		18C240A21AFB008100D6C333 /* PBFTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A11AFB008100D6C333 /* PBFTabbarController.m */; };
-		18C240A51AFB014600D6C333 /* PBFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A41AFB014600D6C333 /* PBFHomeViewController.m */; };
-		18C240A81AFB018700D6C333 /* PBFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A71AFB018700D6C333 /* PBFMessageViewController.m */; };
-		18C240AB1AFB01AD00D6C333 /* PBFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */; };
-		18C240AE1AFB01E400D6C333 /* PBFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185AEEE61AFB0FCC00D93B3E /* PBFDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFDiscoverViewController.h; sourceTree = "<group>"; };
+		185AEEE71AFB0FCC00D93B3E /* PBFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFDiscoverViewController.m; sourceTree = "<group>"; };
+		185AEEF51AFB10BB00D93B3E /* PBFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFHomeViewController.h; sourceTree = "<group>"; };
+		185AEEF61AFB10BB00D93B3E /* PBFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFHomeViewController.m; sourceTree = "<group>"; };
+		185AEEFC1AFB111D00D93B3E /* PBFTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFTabbarController.h; sourceTree = "<group>"; };
+		185AEEFD1AFB111D00D93B3E /* PBFTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFTabbarController.m; sourceTree = "<group>"; };
+		185AEF031AFB118800D93B3E /* PBFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMeViewController.h; sourceTree = "<group>"; };
+		185AEF041AFB118800D93B3E /* PBFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMeViewController.m; sourceTree = "<group>"; };
+		185AEF0A1AFB11EA00D93B3E /* PBFMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMessageViewController.h; sourceTree = "<group>"; };
+		185AEF0B1AFB11EA00D93B3E /* PBFMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMessageViewController.m; sourceTree = "<group>"; };
+		185AEF0F1AFB123200D93B3E /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
+		185AEF101AFB123200D93B3E /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
 		18C240761AFAF81800D6C333 /* PBFWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBFWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C2407A1AFAF81800D6C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C2407B1AFAF81800D6C333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,16 +56,6 @@
 		18C240941AFAF81800D6C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C240951AFAF81800D6C333 /* PBFWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBFWeiboTests.m; sourceTree = "<group>"; };
 		18C2409F1AFAFC8500D6C333 /* PBFWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBFWeibo.pch; sourceTree = "<group>"; };
-		18C240A01AFB008100D6C333 /* PBFTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFTabbarController.h; sourceTree = "<group>"; };
-		18C240A11AFB008100D6C333 /* PBFTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFTabbarController.m; sourceTree = "<group>"; };
-		18C240A31AFB014600D6C333 /* PBFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFHomeViewController.h; sourceTree = "<group>"; };
-		18C240A41AFB014600D6C333 /* PBFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFHomeViewController.m; sourceTree = "<group>"; };
-		18C240A61AFB018700D6C333 /* PBFMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMessageViewController.h; sourceTree = "<group>"; };
-		18C240A71AFB018700D6C333 /* PBFMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMessageViewController.m; sourceTree = "<group>"; };
-		18C240A91AFB01AD00D6C333 /* PBFDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFDiscoverViewController.h; sourceTree = "<group>"; };
-		18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFDiscoverViewController.m; sourceTree = "<group>"; };
-		18C240AC1AFB01E400D6C333 /* PBFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMeViewController.h; sourceTree = "<group>"; };
-		18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,201 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185AEEE11AFB0F1100D93B3E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF0D1AFB120800D93B3E /* Other(其他) */,
+				185AEF061AFB119700D93B3E /* Message(消息) */,
+				185AEEFF1AFB113100D93B3E /* Me(我) */,
+				185AEEF81AFB10CB00D93B3E /* Main(主要) */,
+				185AEEEB1AFB103700D93B3E /* Home(首页) */,
+				185AEEE41AFB0F6F00D93B3E /* Discover(广场) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		185AEEE41AFB0F6F00D93B3E /* Discover(广场) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEE51AFB0F8900D93B3E /* Controller */,
+				185AEEEA1AFB0FE100D93B3E /* View */,
+				185AEEE91AFB0FDA00D93B3E /* Model */,
+			);
+			path = "Discover(广场)";
+			sourceTree = "<group>";
+		};
+		185AEEE51AFB0F8900D93B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEE61AFB0FCC00D93B3E /* PBFDiscoverViewController.h */,
+				185AEEE71AFB0FCC00D93B3E /* PBFDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185AEEE91AFB0FDA00D93B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185AEEEA1AFB0FE100D93B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185AEEEB1AFB103700D93B3E /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEF41AFB108F00D93B3E /* View */,
+				185AEEF31AFB107A00D93B3E /* Model */,
+				185AEEF21AFB107300D93B3E /* Controller */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		185AEEF21AFB107300D93B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEF51AFB10BB00D93B3E /* PBFHomeViewController.h */,
+				185AEEF61AFB10BB00D93B3E /* PBFHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185AEEF31AFB107A00D93B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185AEEF41AFB108F00D93B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185AEEF81AFB10CB00D93B3E /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEFB1AFB10F600D93B3E /* View */,
+				185AEEFA1AFB10ED00D93B3E /* Model */,
+				185AEEF91AFB10E000D93B3E /* Controller */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		185AEEF91AFB10E000D93B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185AEEFC1AFB111D00D93B3E /* PBFTabbarController.h */,
+				185AEEFD1AFB111D00D93B3E /* PBFTabbarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185AEEFA1AFB10ED00D93B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185AEEFB1AFB10F600D93B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185AEEFF1AFB113100D93B3E /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF021AFB115800D93B3E /* View */,
+				185AEF011AFB115000D93B3E /* Model */,
+				185AEF001AFB114200D93B3E /* Controller */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		185AEF001AFB114200D93B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF031AFB118800D93B3E /* PBFMeViewController.h */,
+				185AEF041AFB118800D93B3E /* PBFMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185AEF011AFB115000D93B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185AEF021AFB115800D93B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185AEF061AFB119700D93B3E /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF091AFB11BE00D93B3E /* View */,
+				185AEF081AFB11B200D93B3E /* Model */,
+				185AEF071AFB11A700D93B3E /* Controller */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		185AEF071AFB11A700D93B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF0A1AFB11EA00D93B3E /* PBFMessageViewController.h */,
+				185AEF0B1AFB11EA00D93B3E /* PBFMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		185AEF081AFB11B200D93B3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185AEF091AFB11BE00D93B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185AEF0D1AFB120800D93B3E /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF0E1AFB122000D93B3E /* Category */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		185AEF0E1AFB122000D93B3E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				185AEF0F1AFB123200D93B3E /* UIImage+MJ.h */,
+				185AEF101AFB123200D93B3E /* UIImage+MJ.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		18C2406D1AFAF81800D6C333 = {
 			isa = PBXGroup;
 			children = (
@@ -94,19 +292,10 @@
 		18C240781AFAF81800D6C333 /* PBFWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				185AEEE11AFB0F1100D93B3E /* Classes */,
 				18C2407D1AFAF81800D6C333 /* AppDelegate.h */,
 				18C2407E1AFAF81800D6C333 /* AppDelegate.m */,
-				18C240A01AFB008100D6C333 /* PBFTabbarController.h */,
-				18C240A11AFB008100D6C333 /* PBFTabbarController.m */,
 				18C240791AFAF81800D6C333 /* Supporting Files */,
-				18C240A31AFB014600D6C333 /* PBFHomeViewController.h */,
-				18C240A41AFB014600D6C333 /* PBFHomeViewController.m */,
-				18C240A61AFB018700D6C333 /* PBFMessageViewController.h */,
-				18C240A71AFB018700D6C333 /* PBFMessageViewController.m */,
-				18C240A91AFB01AD00D6C333 /* PBFDiscoverViewController.h */,
-				18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */,
-				18C240AC1AFB01E400D6C333 /* PBFMeViewController.h */,
-				18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */,
 			);
 			path = PBFWeibo;
 			sourceTree = "<group>";
@@ -241,13 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C240A21AFB008100D6C333 /* PBFTabbarController.m in Sources */,
 				18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */,
-				18C240AE1AFB01E400D6C333 /* PBFMeViewController.m in Sources */,
-				18C240AB1AFB01AD00D6C333 /* PBFDiscoverViewController.m in Sources */,
-				18C240A81AFB018700D6C333 /* PBFMessageViewController.m in Sources */,
-				18C240A51AFB014600D6C333 /* PBFHomeViewController.m in Sources */,
 				18C2407C1AFAF81800D6C333 /* main.m in Sources */,
+				185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */,
+				185AEEF71AFB10BB00D93B3E /* PBFHomeViewController.m in Sources */,
+				185AEF0C1AFB11EA00D93B3E /* PBFMessageViewController.m in Sources */,
+				185AEF051AFB118800D93B3E /* PBFMeViewController.m in Sources */,
+				185AEEE81AFB0FCC00D93B3E /* PBFDiscoverViewController.m in Sources */,
+				185AEEFE1AFB111D00D93B3E /* PBFTabbarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "PBFMessageViewController.h"
 #import "PBFDiscoverViewController.h"
 #import "PBFMeViewController.h"
+#import "UIImage+MJ.h"
 
 @interface PBFTabbarController ()
 
@@ -59,8 +60,15 @@
 {
     // 1.设置控制器的属性
     childVc.title = title;
-    childVc.tabBarItem.image = [UIImage imageNamed:imageName];
-    childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    // 设置图标
+    childVc.tabBarItem.image = [UIImage imageWithName:imageName];
+    // 设置选中的图标
+    UIImage *selectedImage = [UIImage imageWithName:selectedImageName];
+    if (iOS7) {
+        childVc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    } else {
+        childVc.tabBarItem.selectedImage = selectedImage;
+    }
     
     // 2.包装一个导航控制器
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childVc];
