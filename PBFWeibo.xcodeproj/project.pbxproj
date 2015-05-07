@@ -13,6 +13,11 @@
 		18C240871AFAF81800D6C333 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C240861AFAF81800D6C333 /* Images.xcassets */; };
 		18C2408A1AFAF81800D6C333 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C240881AFAF81800D6C333 /* LaunchScreen.xib */; };
 		18C240961AFAF81800D6C333 /* PBFWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240951AFAF81800D6C333 /* PBFWeiboTests.m */; };
+		18C240A21AFB008100D6C333 /* PBFTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A11AFB008100D6C333 /* PBFTabbarController.m */; };
+		18C240A51AFB014600D6C333 /* PBFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A41AFB014600D6C333 /* PBFHomeViewController.m */; };
+		18C240A81AFB018700D6C333 /* PBFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240A71AFB018700D6C333 /* PBFMessageViewController.m */; };
+		18C240AB1AFB01AD00D6C333 /* PBFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */; };
+		18C240AE1AFB01E400D6C333 /* PBFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,17 @@
 		18C2408F1AFAF81800D6C333 /* PBFWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PBFWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C240941AFAF81800D6C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C240951AFAF81800D6C333 /* PBFWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBFWeiboTests.m; sourceTree = "<group>"; };
+		18C2409F1AFAFC8500D6C333 /* PBFWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBFWeibo.pch; sourceTree = "<group>"; };
+		18C240A01AFB008100D6C333 /* PBFTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFTabbarController.h; sourceTree = "<group>"; };
+		18C240A11AFB008100D6C333 /* PBFTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFTabbarController.m; sourceTree = "<group>"; };
+		18C240A31AFB014600D6C333 /* PBFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFHomeViewController.h; sourceTree = "<group>"; };
+		18C240A41AFB014600D6C333 /* PBFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFHomeViewController.m; sourceTree = "<group>"; };
+		18C240A61AFB018700D6C333 /* PBFMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMessageViewController.h; sourceTree = "<group>"; };
+		18C240A71AFB018700D6C333 /* PBFMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMessageViewController.m; sourceTree = "<group>"; };
+		18C240A91AFB01AD00D6C333 /* PBFDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFDiscoverViewController.h; sourceTree = "<group>"; };
+		18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFDiscoverViewController.m; sourceTree = "<group>"; };
+		18C240AC1AFB01E400D6C333 /* PBFMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFMeViewController.h; sourceTree = "<group>"; };
+		18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +96,17 @@
 			children = (
 				18C2407D1AFAF81800D6C333 /* AppDelegate.h */,
 				18C2407E1AFAF81800D6C333 /* AppDelegate.m */,
-				18C240831AFAF81800D6C333 /* Main.storyboard */,
-				18C240861AFAF81800D6C333 /* Images.xcassets */,
-				18C240881AFAF81800D6C333 /* LaunchScreen.xib */,
+				18C240A01AFB008100D6C333 /* PBFTabbarController.h */,
+				18C240A11AFB008100D6C333 /* PBFTabbarController.m */,
 				18C240791AFAF81800D6C333 /* Supporting Files */,
+				18C240A31AFB014600D6C333 /* PBFHomeViewController.h */,
+				18C240A41AFB014600D6C333 /* PBFHomeViewController.m */,
+				18C240A61AFB018700D6C333 /* PBFMessageViewController.h */,
+				18C240A71AFB018700D6C333 /* PBFMessageViewController.m */,
+				18C240A91AFB01AD00D6C333 /* PBFDiscoverViewController.h */,
+				18C240AA1AFB01AD00D6C333 /* PBFDiscoverViewController.m */,
+				18C240AC1AFB01E400D6C333 /* PBFMeViewController.h */,
+				18C240AD1AFB01E400D6C333 /* PBFMeViewController.m */,
 			);
 			path = PBFWeibo;
 			sourceTree = "<group>";
@@ -91,8 +114,12 @@
 		18C240791AFAF81800D6C333 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18C240831AFAF81800D6C333 /* Main.storyboard */,
+				18C240861AFAF81800D6C333 /* Images.xcassets */,
+				18C240881AFAF81800D6C333 /* LaunchScreen.xib */,
 				18C2407A1AFAF81800D6C333 /* Info.plist */,
 				18C2407B1AFAF81800D6C333 /* main.m */,
+				18C2409F1AFAFC8500D6C333 /* PBFWeibo.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,7 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C240A21AFB008100D6C333 /* PBFTabbarController.m in Sources */,
 				18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */,
+				18C240AE1AFB01E400D6C333 /* PBFMeViewController.m in Sources */,
+				18C240AB1AFB01AD00D6C333 /* PBFDiscoverViewController.m in Sources */,
+				18C240A81AFB018700D6C333 /* PBFMessageViewController.m in Sources */,
+				18C240A51AFB014600D6C333 /* PBFHomeViewController.m in Sources */,
 				18C2407C1AFAF81800D6C333 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +373,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PBFWeibo/PBFWeibo.pch";
 				INFOPLIST_FILE = PBFWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +385,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PBFWeibo/PBFWeibo.pch";
 				INFOPLIST_FILE = PBFWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
