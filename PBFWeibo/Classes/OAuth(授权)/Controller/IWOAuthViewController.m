@@ -100,8 +100,6 @@
     // AFNetworking\AFN
     // 1.创建请求管理对象
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    // 说明服务器返回的JSON数据
-    mgr.responseSerializer = [AFJSONResponseSerializer serializer];
     
     // 2.封装请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
