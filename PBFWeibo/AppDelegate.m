@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "PBFTabbarController.h"
-#import "IWNewfeatureViewController.h"
+#import "IWOAuthViewController.h"
+#import "IWAccount.h"
+#import "IWWeiboTool.h"
+#import "IWAccountTool.h"
 
 @interface AppDelegate ()
 
@@ -19,28 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    NSString *key = @"CFBundleVersion";
-    
-    // 取出沙盒中存储的上次使用软件的版本号
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *lastVersion = [defaults stringForKey:key];
-    
-    // 获得当前软件的版本号
-    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-    
-    if ([currentVersion isEqualToString:lastVersion]) {
-        // 显示状态栏
-        application.statusBarHidden = NO;
-        
-        self.window.rootViewController = [[PBFTabbarController alloc] init];
-    } else { // 新版本
-        self.window.rootViewController = [[IWNewfeatureViewController alloc] init];
-        // 存储新版本
-        [defaults setObject:currentVersion forKey:key];
-        [defaults synchronize];
-    }
     [self.window makeKeyAndVisible];
+    
+    // 先判断有无存储账号信息
+    IWAccount *account = [IWAccountTool account];
+    
+    if (account) { // 之前登录成功
+        [IWWeiboTool chooseRootController];
+    } else { // 之前没有登录成功
+        self.window.rootViewController = [[IWOAuthViewController alloc] init];
+    }
     return YES;
 }
 
