@@ -25,7 +25,7 @@
 - (void)setBadgeValue:(NSString *)badgeValue
 {
 #warning copy
-//    _badgeValue = badgeValue;
+    //    _badgeValue = badgeValue;
     _badgeValue = [badgeValue copy];
     
     if (badgeValue) {

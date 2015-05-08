@@ -14,6 +14,7 @@
 #import "UIImage+MJ.h"
 #import "IWTabBar.h"
 #import "IWNavigationController.h"
+#import "IWComposeViewController.h"
 
 @interface PBFTabbarController ()<IWTabBarDelegate>
 /**
@@ -67,6 +68,16 @@
 - (void)tabBar:(IWTabBar *)tabBar didSelectedButtonFrom:(int)from to:(int)to
 {
     self.selectedIndex = to;
+}
+
+/**
+ *  监听加号按钮点击
+ */
+- (void)tabBarDidClickedPlusButton:(IWTabBar *)tabBar
+{
+    IWComposeViewController *compose = [[IWComposeViewController alloc] init];
+    IWNavigationController *nav = [[IWNavigationController alloc] initWithRootViewController:compose];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 

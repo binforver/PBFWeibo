@@ -21,11 +21,14 @@
  *  用户的头像
  */
 @property (nonatomic, copy) NSString *profile_image_url;
+
+/**
+ *  会员等级
+ */
+@property (nonatomic, assign) int mbrank;
+
+/**
+ *  会员类型 > 2 会员
+ */
+@property (nonatomic, assign) int mbtype;
 @end
-/*
- {
-     "id": 1404376560,
-     "name": "zaku",
-     "profile_image_url": "http://tp1.sinaimg.cn/1404376560/50/0/1",
- }
-*/

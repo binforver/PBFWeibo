@@ -10,6 +10,7 @@
 #define PBFWeibo_PBFWeibo_pch
 
 #import "UIImage+MJ.h"
+#import "IWCommon.h"
 
 // 1.判断是否为iOS7
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
