@@ -16,6 +16,7 @@
 #import "IWAccount.h"
 #import "IWStatus.h"
 #import "IWUser.h"
+#import "MJExtension.h"
 
 @interface PBFHomeViewController ()
 @property (nonatomic, strong) NSArray *statuses;
@@ -49,19 +50,8 @@
     // 3.发送请求
     [mgr GET:@"https://api.weibo.com/2/statuses/home_timeline.json" parameters:params
      success:^(AFHTTPRequestOperation *operation, id responseObject) {
-         // 取出所有的微博数据(每一条微博都是一个字典)
-         NSArray *dictArray = responseObject[@"statuses"];
-         
-         // 将字典数据转为模型数据
-         NSMutableArray *statusArray = [NSMutableArray array];
-         for (NSDictionary *dict in dictArray) {
-             // 创建模型
-             IWStatus *status = [IWStatus statusWithDict:dict];
-             
-             // 添加模型
-             [statusArray addObject:status];
-         }
-         self.statuses = statusArray;
+         // 将字典数组转为模型数组(里面放的就是IWStatus模型)
+         self.statuses = [IWStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
          
          // 刷新表格
          [self.tableView reloadData];

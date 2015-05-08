@@ -34,9 +34,6 @@
  *  微博的作者
  */
 @property (nonatomic, strong) IWUser *user;
-
-+ (instancetype)statusWithDict:(NSDictionary *)dict;
-- (instancetype)initWithDict:(NSDictionary *)dict;
 @end
 /*
 {
