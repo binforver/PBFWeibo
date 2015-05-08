@@ -13,6 +13,9 @@
 		185AEF051AFB118800D93B3E /* PBFMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF041AFB118800D93B3E /* PBFMeViewController.m */; };
 		185AEF0C1AFB11EA00D93B3E /* PBFMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF0B1AFB11EA00D93B3E /* PBFMessageViewController.m */; };
 		185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF101AFB123200D93B3E /* UIImage+MJ.m */; };
+		185AEF141AFB199400D93B3E /* IWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF131AFB199400D93B3E /* IWTabBar.m */; };
+		185AEF171AFB47D400D93B3E /* IWTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF161AFB47D400D93B3E /* IWTabBarButton.m */; };
+		185AEF1A1AFB47DE00D93B3E /* IWBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF191AFB47DE00D93B3E /* IWBadgeButton.m */; };
 		18C2407C1AFAF81800D6C333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407B1AFAF81800D6C333 /* main.m */; };
 		18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407E1AFAF81800D6C333 /* AppDelegate.m */; };
 		18C240851AFAF81800D6C333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C240831AFAF81800D6C333 /* Main.storyboard */; };
@@ -44,6 +47,12 @@
 		185AEF0B1AFB11EA00D93B3E /* PBFMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFMessageViewController.m; sourceTree = "<group>"; };
 		185AEF0F1AFB123200D93B3E /* UIImage+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MJ.h"; sourceTree = "<group>"; };
 		185AEF101AFB123200D93B3E /* UIImage+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MJ.m"; sourceTree = "<group>"; };
+		185AEF121AFB199400D93B3E /* IWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBar.h; sourceTree = "<group>"; };
+		185AEF131AFB199400D93B3E /* IWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBar.m; sourceTree = "<group>"; };
+		185AEF151AFB47D400D93B3E /* IWTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBarButton.h; sourceTree = "<group>"; };
+		185AEF161AFB47D400D93B3E /* IWTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarButton.m; sourceTree = "<group>"; };
+		185AEF181AFB47DE00D93B3E /* IWBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBadgeButton.h; sourceTree = "<group>"; };
+		185AEF191AFB47DE00D93B3E /* IWBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBadgeButton.m; sourceTree = "<group>"; };
 		18C240761AFAF81800D6C333 /* PBFWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBFWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C2407A1AFAF81800D6C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C2407B1AFAF81800D6C333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -184,6 +193,12 @@
 		185AEEFB1AFB10F600D93B3E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185AEF121AFB199400D93B3E /* IWTabBar.h */,
+				185AEF131AFB199400D93B3E /* IWTabBar.m */,
+				185AEF151AFB47D400D93B3E /* IWTabBarButton.h */,
+				185AEF161AFB47D400D93B3E /* IWTabBarButton.m */,
+				185AEF181AFB47DE00D93B3E /* IWBadgeButton.h */,
+				185AEF191AFB47DE00D93B3E /* IWBadgeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,12 +445,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AEF141AFB199400D93B3E /* IWTabBar.m in Sources */,
 				18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */,
 				18C2407C1AFAF81800D6C333 /* main.m in Sources */,
+				185AEF171AFB47D400D93B3E /* IWTabBarButton.m in Sources */,
 				185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */,
 				185AEEF71AFB10BB00D93B3E /* PBFHomeViewController.m in Sources */,
 				185AEF0C1AFB11EA00D93B3E /* PBFMessageViewController.m in Sources */,
 				185AEF051AFB118800D93B3E /* PBFMeViewController.m in Sources */,
+				185AEF1A1AFB47DE00D93B3E /* IWBadgeButton.m in Sources */,
 				185AEEE81AFB0FCC00D93B3E /* PBFDiscoverViewController.m in Sources */,
 				185AEEFE1AFB111D00D93B3E /* PBFTabbarController.m in Sources */,
 			);

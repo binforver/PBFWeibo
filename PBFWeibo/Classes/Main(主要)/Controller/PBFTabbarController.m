@@ -12,8 +12,13 @@
 #import "PBFDiscoverViewController.h"
 #import "PBFMeViewController.h"
 #import "UIImage+MJ.h"
+#import "IWTabBar.h"
 
-@interface PBFTabbarController ()
+@interface PBFTabbarController ()<IWTabBarDelegate>
+/**
+ *  自定义的tabbar
+ */
+@property (nonatomic, weak) IWTabBar *customTabBar;
 
 @end
 
@@ -21,10 +26,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //0. 初始化tabbar
+    [self setupTabbar];
 
     //1.初始化所有自控制器
     [self setupAllChildViewControllers];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // 删除系统自动生成的UITabBarButton
+    for (UIView *child in self.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
+}
+
+/**
+ *  初始化tabbar
+ */
+- (void)setupTabbar
+{
+    IWTabBar *customTabBar = [[IWTabBar alloc] init];
+    customTabBar.frame = self.tabBar.bounds;
+    customTabBar.delegate = self;
+    [self.tabBar addSubview:customTabBar];
+    self.customTabBar = customTabBar;
+}
+
+/**
+ *  监听tabbar按钮的改变
+ *  @param from   原来选中的位置
+ *  @param to     最新选中的位置
+ */
+- (void)tabBar:(IWTabBar *)tabBar didSelectedButtonFrom:(int)from to:(int)to
+{
+    self.selectedIndex = to;
+}
+
 
 /**
  *  初始化所有的子控制器
@@ -41,6 +84,7 @@
     
     // 3.广场
     PBFDiscoverViewController *discover = [[PBFDiscoverViewController alloc] init];
+     discover.tabBarItem.badgeValue = @"33+";
     [self setupChildViewController:discover title:@"广场" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
     
     // 4.我
@@ -73,6 +117,9 @@
     // 2.包装一个导航控制器
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childVc];
     [self addChildViewController:nav];
+    
+    // 3.添加tabbar内部的按钮
+    [self.customTabBar addTabBarButtonWithItem:childVc.tabBarItem];
 }
 
 
