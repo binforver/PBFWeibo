@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PBFTabbarController.h"
+#import "IWNewfeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +18,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[PBFTabbarController alloc] init];
-    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    NSString *key = @"CFBundleVersion";
+    
+    // 取出沙盒中存储的上次使用软件的版本号
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *lastVersion = [defaults stringForKey:key];
+    
+    // 获得当前软件的版本号
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    
+    if ([currentVersion isEqualToString:lastVersion]) {
+        // 显示状态栏
+        application.statusBarHidden = NO;
+        
+        self.window.rootViewController = [[PBFTabbarController alloc] init];
+    } else { // 新版本
+        self.window.rootViewController = [[IWNewfeatureViewController alloc] init];
+        // 存储新版本
+        [defaults setObject:currentVersion forKey:key];
+        [defaults synchronize];
+    }
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
