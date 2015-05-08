@@ -16,6 +16,10 @@
 		185AEF141AFB199400D93B3E /* IWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF131AFB199400D93B3E /* IWTabBar.m */; };
 		185AEF171AFB47D400D93B3E /* IWTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF161AFB47D400D93B3E /* IWTabBarButton.m */; };
 		185AEF1A1AFB47DE00D93B3E /* IWBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF191AFB47DE00D93B3E /* IWBadgeButton.m */; };
+		185AEF1D1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF1C1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m */; };
+		185AEF201AFC5B7A00D93B3E /* IWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF1F1AFC5B7A00D93B3E /* IWNavigationController.m */; };
+		185AEF231AFC5D9100D93B3E /* IWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF221AFC5D9100D93B3E /* IWSearchBar.m */; };
+		185AEF261AFC5DE000D93B3E /* IWTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF251AFC5DE000D93B3E /* IWTitleButton.m */; };
 		18C2407C1AFAF81800D6C333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407B1AFAF81800D6C333 /* main.m */; };
 		18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2407E1AFAF81800D6C333 /* AppDelegate.m */; };
 		18C240851AFAF81800D6C333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C240831AFAF81800D6C333 /* Main.storyboard */; };
@@ -53,6 +57,14 @@
 		185AEF161AFB47D400D93B3E /* IWTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarButton.m; sourceTree = "<group>"; };
 		185AEF181AFB47DE00D93B3E /* IWBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBadgeButton.h; sourceTree = "<group>"; };
 		185AEF191AFB47DE00D93B3E /* IWBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBadgeButton.m; sourceTree = "<group>"; };
+		185AEF1B1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MJ.h"; sourceTree = "<group>"; };
+		185AEF1C1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MJ.m"; sourceTree = "<group>"; };
+		185AEF1E1AFC5B7A00D93B3E /* IWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWNavigationController.h; sourceTree = "<group>"; };
+		185AEF1F1AFC5B7A00D93B3E /* IWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWNavigationController.m; sourceTree = "<group>"; };
+		185AEF211AFC5D9100D93B3E /* IWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWSearchBar.h; sourceTree = "<group>"; };
+		185AEF221AFC5D9100D93B3E /* IWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWSearchBar.m; sourceTree = "<group>"; };
+		185AEF241AFC5DE000D93B3E /* IWTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTitleButton.h; sourceTree = "<group>"; };
+		185AEF251AFC5DE000D93B3E /* IWTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTitleButton.m; sourceTree = "<group>"; };
 		18C240761AFAF81800D6C333 /* PBFWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBFWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C2407A1AFAF81800D6C333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C2407B1AFAF81800D6C333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +139,8 @@
 		185AEEEA1AFB0FE100D93B3E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185AEF211AFC5D9100D93B3E /* IWSearchBar.h */,
+				185AEF221AFC5D9100D93B3E /* IWSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +174,8 @@
 		185AEEF41AFB108F00D93B3E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				185AEF241AFC5DE000D93B3E /* IWTitleButton.h */,
+				185AEF251AFC5DE000D93B3E /* IWTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +195,8 @@
 			children = (
 				185AEEFC1AFB111D00D93B3E /* PBFTabbarController.h */,
 				185AEEFD1AFB111D00D93B3E /* PBFTabbarController.m */,
+				185AEF1E1AFC5B7A00D93B3E /* IWNavigationController.h */,
+				185AEF1F1AFC5B7A00D93B3E /* IWNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +300,8 @@
 			children = (
 				185AEF0F1AFB123200D93B3E /* UIImage+MJ.h */,
 				185AEF101AFB123200D93B3E /* UIImage+MJ.m */,
+				185AEF1B1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.h */,
+				185AEF1C1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,6 +468,8 @@
 				185AEF141AFB199400D93B3E /* IWTabBar.m in Sources */,
 				18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */,
 				18C2407C1AFAF81800D6C333 /* main.m in Sources */,
+				185AEF1D1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m in Sources */,
+				185AEF201AFC5B7A00D93B3E /* IWNavigationController.m in Sources */,
 				185AEF171AFB47D400D93B3E /* IWTabBarButton.m in Sources */,
 				185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */,
 				185AEEF71AFB10BB00D93B3E /* PBFHomeViewController.m in Sources */,
@@ -456,6 +478,8 @@
 				185AEF1A1AFB47DE00D93B3E /* IWBadgeButton.m in Sources */,
 				185AEEE81AFB0FCC00D93B3E /* PBFDiscoverViewController.m in Sources */,
 				185AEEFE1AFB111D00D93B3E /* PBFTabbarController.m in Sources */,
+				185AEF231AFC5D9100D93B3E /* IWSearchBar.m in Sources */,
+				185AEF261AFC5DE000D93B3E /* IWTitleButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
