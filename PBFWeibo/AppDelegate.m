@@ -25,6 +25,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
+    // registering for remote notifications
+    [self registerForRemoteNotification];
+    
     // 先判断有无存储账号信息
     IWAccount *account = [IWAccountTool account];
     
@@ -41,9 +44,28 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+/**
+ 让程序保持后台运行
+ 1.尽量申请后台运行的时间
+ [application beginBackgroundTaskWithExpirationHandler:^{
+ 
+ }];
+ 
+ 2.在Info.plist中声明自己的应用类型为audio、在后台播放mp3
+ */
+
+/**
+ *  app进入后台会调用这个方法
+ */
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    // 在后台开启任务让程序持续保持运行状态（能保持运行的时间是不确定）
+    [application beginBackgroundTaskWithExpirationHandler:^{
+        //        IWLog(@"过期了------");
+    }];
+    
+    // 定时提醒（定时弹框）
+    //    [UILocalNotification ];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -65,5 +87,21 @@
     // 清除内存中的图片
     [[SDWebImageManager sharedManager].imageCache clearMemory];
 }
+
+- (void)registerForRemoteNotification {
+    if (iOS8) {
+        UIUserNotificationType types = UIUserNotificationTypeSound | UIUserNotificationTypeBadge | UIUserNotificationTypeAlert;
+        UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
+}
+
+#ifdef __IPHONE_8_0
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [application registerForRemoteNotifications];
+}
+#endif
 
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PBFHomeViewController : UITableViewController
-
+- (void)refresh;
 @end

@@ -64,6 +64,17 @@
 		185AEF991AFCA39600D93B3E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF871AFCA39600D93B3E /* UIImageView+HighlightedWebCache.m */; };
 		185AEF9A1AFCA39600D93B3E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF891AFCA39600D93B3E /* UIImageView+WebCache.m */; };
 		185AEF9B1AFCA39600D93B3E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 185AEF8B1AFCA39600D93B3E /* UIView+WebCacheOperation.m */; };
+		1879EBE31AFDF6A100D0B063 /* IWStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBE21AFDF6A100D0B063 /* IWStatusTool.m */; };
+		1879EBEA1AFE0BEE00D0B063 /* IWBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBE91AFE0BEE00D0B063 /* IWBaseParam.m */; };
+		1879EBED1AFE0C3000D0B063 /* IWUserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBEC1AFE0C3000D0B063 /* IWUserTool.m */; };
+		1879EBF41AFE0CAC00D0B063 /* IWHomeStatusesParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBF11AFE0CAC00D0B063 /* IWHomeStatusesParam.m */; };
+		1879EBF51AFE0CAC00D0B063 /* IWHomeStatusesResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBF31AFE0CAC00D0B063 /* IWHomeStatusesResult.m */; };
+		1879EBFA1AFE0CD100D0B063 /* IWUserInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBF71AFE0CD100D0B063 /* IWUserInfoParam.m */; };
+		1879EBFB1AFE0CD100D0B063 /* IWUserInfoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBF91AFE0CD100D0B063 /* IWUserInfoResult.m */; };
+		1879EC011AFE0E3D00D0B063 /* IWSendStatusParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EBFE1AFE0E3D00D0B063 /* IWSendStatusParam.m */; };
+		1879EC021AFE0E3D00D0B063 /* IWSendStatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EC001AFE0E3D00D0B063 /* IWSendStatusResult.m */; };
+		1879EC081AFE105B00D0B063 /* IWUserUnreadCountParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EC051AFE105B00D0B063 /* IWUserUnreadCountParam.m */; };
+		1879EC091AFE105B00D0B063 /* IWUserUnreadCountResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879EC071AFE105B00D0B063 /* IWUserUnreadCountResult.m */; };
 		1899CE171AFCD5F100067A19 /* IWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899CE161AFCD5F100067A19 /* IWPhoto.m */; };
 		1899CE331AFCD7E400067A19 /* IWStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899CE2E1AFCD7E400067A19 /* IWStatus.m */; };
 		1899CE341AFCD7E400067A19 /* IWStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899CE301AFCD7E400067A19 /* IWStatusFrame.m */; };
@@ -230,6 +241,28 @@
 		185AEF891AFCA39600D93B3E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		185AEF8A1AFCA39600D93B3E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		185AEF8B1AFCA39600D93B3E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		1879EBE11AFDF6A100D0B063 /* IWStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWStatusTool.h; sourceTree = "<group>"; };
+		1879EBE21AFDF6A100D0B063 /* IWStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWStatusTool.m; sourceTree = "<group>"; };
+		1879EBE81AFE0BEE00D0B063 /* IWBaseParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBaseParam.h; sourceTree = "<group>"; };
+		1879EBE91AFE0BEE00D0B063 /* IWBaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBaseParam.m; sourceTree = "<group>"; };
+		1879EBEB1AFE0C3000D0B063 /* IWUserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserTool.h; sourceTree = "<group>"; };
+		1879EBEC1AFE0C3000D0B063 /* IWUserTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserTool.m; sourceTree = "<group>"; };
+		1879EBF01AFE0CAC00D0B063 /* IWHomeStatusesParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHomeStatusesParam.h; sourceTree = "<group>"; };
+		1879EBF11AFE0CAC00D0B063 /* IWHomeStatusesParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeStatusesParam.m; sourceTree = "<group>"; };
+		1879EBF21AFE0CAC00D0B063 /* IWHomeStatusesResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHomeStatusesResult.h; sourceTree = "<group>"; };
+		1879EBF31AFE0CAC00D0B063 /* IWHomeStatusesResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeStatusesResult.m; sourceTree = "<group>"; };
+		1879EBF61AFE0CD100D0B063 /* IWUserInfoParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserInfoParam.h; sourceTree = "<group>"; };
+		1879EBF71AFE0CD100D0B063 /* IWUserInfoParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserInfoParam.m; sourceTree = "<group>"; };
+		1879EBF81AFE0CD100D0B063 /* IWUserInfoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserInfoResult.h; sourceTree = "<group>"; };
+		1879EBF91AFE0CD100D0B063 /* IWUserInfoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserInfoResult.m; sourceTree = "<group>"; };
+		1879EBFD1AFE0E3D00D0B063 /* IWSendStatusParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWSendStatusParam.h; sourceTree = "<group>"; };
+		1879EBFE1AFE0E3D00D0B063 /* IWSendStatusParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWSendStatusParam.m; sourceTree = "<group>"; };
+		1879EBFF1AFE0E3D00D0B063 /* IWSendStatusResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWSendStatusResult.h; sourceTree = "<group>"; };
+		1879EC001AFE0E3D00D0B063 /* IWSendStatusResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWSendStatusResult.m; sourceTree = "<group>"; };
+		1879EC041AFE105B00D0B063 /* IWUserUnreadCountParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserUnreadCountParam.h; sourceTree = "<group>"; };
+		1879EC051AFE105B00D0B063 /* IWUserUnreadCountParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserUnreadCountParam.m; sourceTree = "<group>"; };
+		1879EC061AFE105B00D0B063 /* IWUserUnreadCountResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWUserUnreadCountResult.h; sourceTree = "<group>"; };
+		1879EC071AFE105B00D0B063 /* IWUserUnreadCountResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserUnreadCountResult.m; sourceTree = "<group>"; };
 		1899CE151AFCD5F100067A19 /* IWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWPhoto.h; sourceTree = "<group>"; };
 		1899CE161AFCD5F100067A19 /* IWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWPhoto.m; sourceTree = "<group>"; };
 		1899CE2D1AFCD7E400067A19 /* IWStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWStatus.h; sourceTree = "<group>"; };
@@ -350,6 +383,9 @@
 		180487481AFCA7DD0061482F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1879EC031AFE103B00D0B063 /* UserUnreadCount */,
+				1879EBEF1AFE0C7C00D0B063 /* UserInfo */,
+				1879EBEE1AFE0C6E00D0B063 /* HomeStatuses */,
 				1899CE2D1AFCD7E400067A19 /* IWStatus.h */,
 				1899CE2E1AFCD7E400067A19 /* IWStatus.m */,
 				1899CE2F1AFCD7E400067A19 /* IWStatusFrame.h */,
@@ -416,6 +452,7 @@
 		185AEEEB1AFB103700D93B3E /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				1879EBE01AFDF67F00D0B063 /* StatusTool */,
 				180487481AFCA7DD0061482F /* Model */,
 				185AEEF41AFB108F00D93B3E /* View */,
 				185AEEF21AFB107300D93B3E /* Controller */,
@@ -563,6 +600,7 @@
 		185AEF0D1AFB120800D93B3E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				1879EBE71AFE0BC200D0B063 /* Model */,
 				1899CE711AFCDC9800067A19 /* ToolClass */,
 				185AEF5E1AFC9B7900D93B3E /* IWWeiboTool.h */,
 				185AEF5F1AFC9B7900D93B3E /* IWWeiboTool.m */,
@@ -749,6 +787,70 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		1879EBE01AFDF67F00D0B063 /* StatusTool */ = {
+			isa = PBXGroup;
+			children = (
+				1879EBE11AFDF6A100D0B063 /* IWStatusTool.h */,
+				1879EBE21AFDF6A100D0B063 /* IWStatusTool.m */,
+				1879EBEB1AFE0C3000D0B063 /* IWUserTool.h */,
+				1879EBEC1AFE0C3000D0B063 /* IWUserTool.m */,
+			);
+			path = StatusTool;
+			sourceTree = "<group>";
+		};
+		1879EBE71AFE0BC200D0B063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1879EBE81AFE0BEE00D0B063 /* IWBaseParam.h */,
+				1879EBE91AFE0BEE00D0B063 /* IWBaseParam.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1879EBEE1AFE0C6E00D0B063 /* HomeStatuses */ = {
+			isa = PBXGroup;
+			children = (
+				1879EBF01AFE0CAC00D0B063 /* IWHomeStatusesParam.h */,
+				1879EBF11AFE0CAC00D0B063 /* IWHomeStatusesParam.m */,
+				1879EBF21AFE0CAC00D0B063 /* IWHomeStatusesResult.h */,
+				1879EBF31AFE0CAC00D0B063 /* IWHomeStatusesResult.m */,
+			);
+			path = HomeStatuses;
+			sourceTree = "<group>";
+		};
+		1879EBEF1AFE0C7C00D0B063 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1879EBF61AFE0CD100D0B063 /* IWUserInfoParam.h */,
+				1879EBF71AFE0CD100D0B063 /* IWUserInfoParam.m */,
+				1879EBF81AFE0CD100D0B063 /* IWUserInfoResult.h */,
+				1879EBF91AFE0CD100D0B063 /* IWUserInfoResult.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		1879EBFC1AFE0E1D00D0B063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1879EBFD1AFE0E3D00D0B063 /* IWSendStatusParam.h */,
+				1879EBFE1AFE0E3D00D0B063 /* IWSendStatusParam.m */,
+				1879EBFF1AFE0E3D00D0B063 /* IWSendStatusResult.h */,
+				1879EC001AFE0E3D00D0B063 /* IWSendStatusResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1879EC031AFE103B00D0B063 /* UserUnreadCount */ = {
+			isa = PBXGroup;
+			children = (
+				1879EC041AFE105B00D0B063 /* IWUserUnreadCountParam.h */,
+				1879EC051AFE105B00D0B063 /* IWUserUnreadCountParam.m */,
+				1879EC061AFE105B00D0B063 /* IWUserUnreadCountResult.h */,
+				1879EC071AFE105B00D0B063 /* IWUserUnreadCountResult.m */,
+			);
+			path = UserUnreadCount;
+			sourceTree = "<group>";
+		};
 		1899CE491AFCD88A00067A19 /* MJPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +902,7 @@
 		1899CE751AFCDDB400067A19 /* Compose(发微博) */ = {
 			isa = PBXGroup;
 			children = (
+				1879EBFC1AFE0E1D00D0B063 /* Model */,
 				1899CE771AFCDDDC00067A19 /* Controller */,
 				1899CE761AFCDDD100067A19 /* View */,
 			);
@@ -999,7 +1102,9 @@
 				185AEF991AFCA39600D93B3E /* UIImageView+HighlightedWebCache.m in Sources */,
 				1899CE5A1AFCD8AC00067A19 /* MJPhoto.m in Sources */,
 				1804873F1AFCA7160061482F /* MJArgument.m in Sources */,
+				1879EBFB1AFE0CD100D0B063 /* IWUserInfoResult.m in Sources */,
 				1899CE591AFCD8AC00067A19 /* SDWebImageManager+MJ.m in Sources */,
+				1879EC091AFE105B00D0B063 /* IWUserUnreadCountResult.m in Sources */,
 				185AEF141AFB199400D93B3E /* IWTabBar.m in Sources */,
 				1899CE741AFCDCC000067A19 /* IWHttpTool.m in Sources */,
 				185AEF671AFC9E4100D93B3E /* MBProgressHUD+MJ.m in Sources */,
@@ -1008,6 +1113,7 @@
 				180487401AFCA7160061482F /* MJIvar.m in Sources */,
 				18C2407F1AFAF81800D6C333 /* AppDelegate.m in Sources */,
 				18C2407C1AFAF81800D6C333 /* main.m in Sources */,
+				1879EC081AFE105B00D0B063 /* IWUserUnreadCountParam.m in Sources */,
 				1899CE601AFCD8AC00067A19 /* MJPhotoView.m in Sources */,
 				185AEF1D1AFC5B3C00D93B3E /* UIBarButtonItem+MJ.m in Sources */,
 				1899CE891AFCDE2E00067A19 /* IWComposePhotosView.m in Sources */,
@@ -1015,6 +1121,7 @@
 				1899CE871AFCDE2E00067A19 /* IWTextView.m in Sources */,
 				185AEF9A1AFCA39600D93B3E /* UIImageView+WebCache.m in Sources */,
 				185AEF561AFC8BB100D93B3E /* AFURLConnectionOperation.m in Sources */,
+				1879EBEA1AFE0BEE00D0B063 /* IWBaseParam.m in Sources */,
 				185AEF551AFC8BB100D93B3E /* AFSecurityPolicy.m in Sources */,
 				180487421AFCA7160061482F /* MJMethod.m in Sources */,
 				185AEF951AFCA39600D93B3E /* UIButton+WebCache.m in Sources */,
@@ -1022,10 +1129,12 @@
 				1899CE881AFCDE2E00067A19 /* IWComposeToolbar.m in Sources */,
 				180487471AFCA7160061482F /* NSObject+MJMember.m in Sources */,
 				1899CE421AFCD80000067A19 /* IWStatusCell.m in Sources */,
+				1879EBED1AFE0C3000D0B063 /* IWUserTool.m in Sources */,
 				185AEF201AFC5B7A00D93B3E /* IWNavigationController.m in Sources */,
 				180487431AFCA7160061482F /* MJType.m in Sources */,
 				185AEF531AFC8BB100D93B3E /* AFHTTPSessionManager.m in Sources */,
 				185AEF961AFCA39600D93B3E /* UIImage+GIF.m in Sources */,
+				1879EBF51AFE0CAC00D0B063 /* IWHomeStatusesResult.m in Sources */,
 				180487511AFCAD290061482F /* NSDate+MJ.m in Sources */,
 				1899CE5D1AFCD8AC00067A19 /* MJPhotoLoadingView.m in Sources */,
 				185AEF941AFCA39600D93B3E /* SDWebImagePrefetcher.m in Sources */,
@@ -1033,12 +1142,15 @@
 				1899CE471AFCD80000067A19 /* IWPhotoView.m in Sources */,
 				1899CE461AFCD80000067A19 /* IWPhotosView.m in Sources */,
 				185AEF111AFB123200D93B3E /* UIImage+MJ.m in Sources */,
+				1879EC011AFE0E3D00D0B063 /* IWSendStatusParam.m in Sources */,
+				1879EBFA1AFE0CD100D0B063 /* IWUserInfoParam.m in Sources */,
 				185AEF301AFC755E00D93B3E /* IWPageControl.m in Sources */,
 				185AEF8F1AFCA39600D93B3E /* SDWebImageCompat.m in Sources */,
 				185AEF911AFCA39600D93B3E /* SDWebImageDownloader.m in Sources */,
 				185AEF921AFCA39600D93B3E /* SDWebImageDownloaderOperation.m in Sources */,
 				185AEF901AFCA39600D93B3E /* SDWebImageDecoder.m in Sources */,
 				185AEF931AFCA39600D93B3E /* SDWebImageManager.m in Sources */,
+				1879EBF41AFE0CAC00D0B063 /* IWHomeStatusesParam.m in Sources */,
 				185AEEF71AFB10BB00D93B3E /* PBFHomeViewController.m in Sources */,
 				185AEF0C1AFB11EA00D93B3E /* PBFMessageViewController.m in Sources */,
 				185AEF691AFC9E4100D93B3E /* MBProgressHUD.m in Sources */,
@@ -1067,9 +1179,11 @@
 				185AEF571AFC8BB100D93B3E /* AFURLRequestSerialization.m in Sources */,
 				1899CE8C1AFCDE3B00067A19 /* IWComposeViewController.m in Sources */,
 				185AEF981AFCA39600D93B3E /* UIImage+WebP.m in Sources */,
+				1879EC021AFE0E3D00D0B063 /* IWSendStatusResult.m in Sources */,
 				185AEEE81AFB0FCC00D93B3E /* PBFDiscoverViewController.m in Sources */,
 				185AEF2D1AFC755000D93B3E /* IWNewfeatureViewController.m in Sources */,
 				185AEEFE1AFB111D00D93B3E /* PBFTabbarController.m in Sources */,
+				1879EBE31AFDF6A100D0B063 /* IWStatusTool.m in Sources */,
 				185AEF231AFC5D9100D93B3E /* IWSearchBar.m in Sources */,
 				1899CE351AFCD7E400067A19 /* IWUser.m in Sources */,
 				180487451AFCA7160061482F /* NSObject+MJCoding.m in Sources */,

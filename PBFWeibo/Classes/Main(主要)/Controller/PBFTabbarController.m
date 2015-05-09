@@ -13,6 +13,9 @@
 #import "PBFMeViewController.h"
 #import "UIImage+MJ.h"
 #import "IWTabBar.h"
+#import "IWUserTool.h"
+#import "IWAccountTool.h"
+#import "IWAccount.h"
 #import "IWNavigationController.h"
 #import "IWComposeViewController.h"
 
@@ -22,18 +25,61 @@
  */
 @property (nonatomic, weak) IWTabBar *customTabBar;
 
+@property (nonatomic, strong) PBFHomeViewController *home;
+@property (nonatomic, strong) PBFMessageViewController *message;
+// 3.广场
+@property (nonatomic, strong) PBFDiscoverViewController *discover;
+// 4.我
+@property (nonatomic, strong) PBFMeViewController *me;
+
 @end
 
 @implementation PBFTabbarController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    //0. 初始化tabbar
+    // 初始化tabbar
     [self setupTabbar];
-
-    //1.初始化所有自控制器
+    
+    // 初始化所有的子控制器
     [self setupAllChildViewControllers];
+    
+    // 定时检查未读数
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(checkUnreadCount) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+/**
+ *  定时检查未读数
+ */
+- (void)checkUnreadCount
+{
+    //    IWLog(@"checkUnreadCount-----");
+    
+    // 1.请求参数
+    IWUserUnreadCountParam *param = [IWUserUnreadCountParam param];
+    param.uid = @([IWAccountTool account].uid);
+    
+    // 2.发送请求
+    [IWUserTool userUnreadCountWithParam:param success:^(IWUserUnreadCountResult *result) {
+        // 3.设置badgeValue
+        // 3.1.首页
+        self.home.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.status];
+        
+        // 3.2.消息
+        self.message.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.messageCount];
+        
+        // 3.3.我
+        self.me.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", result.follower];
+        
+        // 4.设置图标右上角的数字
+        [UIApplication sharedApplication].applicationIconBadgeNumber = result.count;
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -60,6 +106,7 @@
     self.customTabBar = customTabBar;
 }
 
+#pragma mark - tabbar的代理方法
 /**
  *  监听tabbar按钮的改变
  *  @param from   原来选中的位置
@@ -68,6 +115,10 @@
 - (void)tabBar:(IWTabBar *)tabBar didSelectedButtonFrom:(int)from to:(int)to
 {
     self.selectedIndex = to;
+    
+    if (to == 0) { // 点击了首页
+        [self.home refresh];
+    }
 }
 
 /**
@@ -80,7 +131,6 @@
     [self presentViewController:nav animated:YES completion:nil];
 }
 
-
 /**
  *  初始化所有的子控制器
  */
@@ -89,19 +139,22 @@
     // 1.首页
     PBFHomeViewController *home = [[PBFHomeViewController alloc] init];
     [self setupChildViewController:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    self.home = home;
     
     // 2.消息
     PBFMessageViewController *message = [[PBFMessageViewController alloc] init];
     [self setupChildViewController:message title:@"消息" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    self.message = message;
     
     // 3.广场
     PBFDiscoverViewController *discover = [[PBFDiscoverViewController alloc] init];
-     discover.tabBarItem.badgeValue = @"33+";
     [self setupChildViewController:discover title:@"广场" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    self.discover = discover;
     
     // 4.我
     PBFMeViewController *me = [[PBFMeViewController alloc] init];
     [self setupChildViewController:me title:@"我" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+    self.me = me;
 }
 
 /**
@@ -133,6 +186,5 @@
     // 3.添加tabbar内部的按钮
     [self.customTabBar addTabBarButtonWithItem:childVc.tabBarItem];
 }
-
 
 @end
